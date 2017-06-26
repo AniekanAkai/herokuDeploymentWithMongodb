@@ -19,7 +19,7 @@ app.use(express.static(__dirname+'/public'));
 
 app.set('view engine', 'ejs');
 
-mongoose.connect(process.env.MONGOURI || 'mongodb://localhost/mongooseDemo');
+mongoose.connect(process.env.MONGODBURI || 'mongodb://localhost/mongooseDemo');
 
 app.get("/people", peopleController.index);
 app.post("/people", peopleController.newPerson);
