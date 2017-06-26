@@ -1,0 +1,21 @@
+{
+  "name": "question3",
+  "version": "1.0.0",
+  "description": "Question 3 of Lab 3 involving Expresss and MongoDB",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "aakai",
+  "license": "ISC",
+  "dependencies":{
+	"express":"*",
+	"mongodb":"*",
+	"morgan":"*",
+	"body-parser":"*",
+	"multer":"*",
+	"ejs":"*",
+	"mongoose":"*",
+	"file-system":"*"
+  }
+}
