@@ -31,5 +31,5 @@ app.post("/people", peopleController.newPerson);
 app.listen(port, function(err){
 	console.log("listening on %s", port);
 	winston.add(winston.transports.MongoDB,{db:"aakaiWinstonTest"});
-	winston.log("listening on %s", port);
+	winston.log("info", "listening on %s", port);
 });
