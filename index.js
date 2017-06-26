@@ -7,7 +7,7 @@ var express = require("express"),
 	mongoose = require("mongoose"),
 	fs = require("file-system"),
 	winston = require("winston"),
-	winstonMongo = require("winston-mongodb");
+	winstonMongo = require("winston-mongodb").MongoDb;
 	
 
 	
