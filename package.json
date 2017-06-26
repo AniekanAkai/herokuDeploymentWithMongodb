@@ -16,6 +16,8 @@
 	"multer":"*",
 	"ejs":"*",
 	"mongoose":"*",
-	"file-system":"*"
+	"file-system":"*",
+	"winston":"*",
+	"winston-mongodb":"*"
   }
 }

@@ -5,7 +5,11 @@ var express = require("express"),
 	multer = require('multer'),
 	logger = require('morgan'),
 	mongoose = require("mongoose"),
-	fs = require("file-system");
+	fs = require("file-system"),
+	winston = require("winston"),
+	winstonMongo = require("winston-mongodb");
+	
+
 	
 require("./models/person");
 
@@ -26,4 +30,6 @@ app.post("/people", peopleController.newPerson);
 
 app.listen(port, function(err){
 	console.log("listening on %s", port);
+	winston.add(winston.transports.MongoDB,{db:"aakaiWinstonTest"});
+	winston.log("listening on %s", port);
 });
